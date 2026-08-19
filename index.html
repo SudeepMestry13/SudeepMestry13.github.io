@@ -4,6 +4,9 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Sudeep Mestry</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
 <style>
 /* ===========================================================
    Token system
@@ -12,8 +15,8 @@
   --bg: #0a0a0c;
   --bg-raised: #121215;
   --line: #232327;
-  --text: #ffffff;
-  --text-muted: #f7f4e9;
+  --text: #e8e6e1;
+  --text-muted: #8c8a84;
   --accent: #f4c430;
   --accent-dim: #a88c1f;
 
@@ -34,7 +37,7 @@ body {
   background: var(--bg);
   color: var(--text);
   font-family: var(--font-body);
-  font-size: 18px;
+  font-size: clamp(1rem, 0.94rem + 0.3vw, 1.125rem);
   line-height: 1.6;
   -webkit-font-smoothing: antialiased;
 }
@@ -68,7 +71,7 @@ header.site-nav .wrap {
 
 .site-name {
   font-family: var(--font-mono);
-  font-size: 14px;
+  font-size: clamp(0.8rem, 0.72rem + 0.35vw, 0.95rem);
   letter-spacing: 0.04em;
   color: var(--text);
   text-decoration: none;
@@ -80,7 +83,7 @@ nav.pages { display: flex; gap: 20px; }
 
 nav.pages a {
   font-family: var(--font-mono);
-  font-size: 13px;
+  font-size: clamp(0.75rem, 0.68rem + 0.3vw, 0.85rem);
   color: var(--text-muted);
   text-decoration: none;
   letter-spacing: 0.03em;
@@ -104,7 +107,7 @@ nav.pages a[aria-current="page"] {
 
 .hero .eyebrow {
   font-family: var(--font-mono);
-  font-size: 13px;
+  font-size: clamp(0.75rem, 0.68rem + 0.3vw, 0.85rem);
   color: var(--accent);
   letter-spacing: 0.08em;
   text-transform: uppercase;
@@ -114,14 +117,14 @@ nav.pages a[aria-current="page"] {
 .hero h1 {
   font-family: var(--font-display);
   font-weight: 500;
-  font-size: 46px;
+  font-size: clamp(1.75rem, 1.3rem + 2.2vw, 2.875rem);
   line-height: 1.15;
   margin: 0 0 20px;
 }
 
 .hero p.lede {
   color: var(--text-muted);
-  font-size: 19px;
+  font-size: clamp(1rem, 0.94rem + 0.3vw, 1.1875rem);
   max-width: 54ch;
   margin: 0;
 }
@@ -152,7 +155,7 @@ section:first-of-type { border-top: none; }
 
 section h2 {
   font-family: var(--font-mono);
-  font-size: 14px;
+  font-size: clamp(0.8rem, 0.72rem + 0.35vw, 0.95rem);
   letter-spacing: 0.08em;
   text-transform: uppercase;
   color: var(--text-muted);
@@ -164,7 +167,7 @@ section h2 {
 
 .entry .meta {
   font-family: var(--font-mono);
-  font-size: 12.5px;
+  font-size: clamp(0.72rem, 0.65rem + 0.3vw, 0.82rem);
   color: var(--accent);
   letter-spacing: 0.02em;
   margin: 0 0 6px;
@@ -173,7 +176,7 @@ section h2 {
 .entry h3 {
   font-family: var(--font-display);
   font-weight: 500;
-  font-size: 21px;
+  font-size: clamp(1.05rem, 0.98rem + 0.35vw, 1.3125rem);
   margin: 0 0 8px;
 }
 
@@ -195,7 +198,7 @@ section h2 {
   border: 1px dashed var(--line);
   color: var(--text-muted);
   font-family: var(--font-mono);
-  font-size: 13px;
+  font-size: clamp(0.75rem, 0.68rem + 0.3vw, 0.85rem);
   padding: 14px 16px;
   border-radius: 4px;
 }
@@ -217,7 +220,7 @@ footer .wrap {
 
 footer p {
   font-family: var(--font-mono);
-  font-size: 12px;
+  font-size: clamp(0.7rem, 0.63rem + 0.3vw, 0.8rem);
   color: var(--text-muted);
   margin: 0;
 }
@@ -241,7 +244,7 @@ footer a:hover { color: var(--accent); }
   padding: 14px 0;
   border-bottom: 1px solid var(--line);
   font-family: var(--font-mono);
-  font-size: 14px;
+  font-size: clamp(0.8rem, 0.72rem + 0.35vw, 0.95rem);
 }
 
 .contact-list li span.label {
@@ -258,7 +261,7 @@ footer a:hover { color: var(--accent); }
    =========================================================== */
 @media (max-width: 560px) {
   .hero { padding: 64px 0 40px; }
-  .hero h1 { font-size: 34px; }
+  .hero h1 { font-size: clamp(1.5rem, 1.2rem + 1.5vw, 2.125rem); }
   nav.pages { gap: 14px; }
 }
 
@@ -273,6 +276,7 @@ a:focus-visible, button:focus-visible {
   outline-offset: 2px;
 }
 
+   
 </style>
 </head>
 <body>
